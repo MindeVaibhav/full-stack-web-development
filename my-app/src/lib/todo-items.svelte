@@ -75,7 +75,7 @@ import { text } from "svelte/internal";
         <button aria-label="Save todo" class="save"> Save</button>
     </form>
 
-    <form action="" method="">
+    <form action="/todos/{todo.uid}.json?_method=delete" method="post">
         <button aria-label="Delet todo" class="delete">Delete</button>
     </form>
 </div>
